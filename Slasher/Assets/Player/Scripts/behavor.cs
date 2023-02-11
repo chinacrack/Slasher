@@ -22,18 +22,18 @@ public class behavor : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
-            RaycastHit hit;
-            if(Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit))
+            if (mag > 0)
             {
-                if(mag > 0)
+                if (!isReloading)
                 {
-                    if(!isReloading)
+                    mag -= 1;
+                    gunShot.Play();
+                    gun.clip = recoil;
+                    gun.Play();
+                    RaycastHit hit;
+                    if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit))
                     {
-                        mag -= 1;
-                        gunShot.Play();
-                        gun.clip = recoil;
-                        gun.Play();
-                        if(hit.collider.gameObject.tag == "Enemy")
+                        if (hit.collider.gameObject.tag == "Enemy")
                         {
                             hit.collider.gameObject.transform.root.GetComponent<enemyscript>().alive = false;
                         }
