@@ -39,7 +39,8 @@ public class behavor : MonoBehaviour
                     {
                         if (hit.collider.gameObject.tag == "Enemy")
                         {
-                            hit.collider.gameObject.transform.root.GetComponent<enemyscript>().alive = false;
+                            hit.collider.gameObject.GetComponent<enemyscript>().alive = false;
+                            Destroy(hit.collider);
                         }
                     }
                 }

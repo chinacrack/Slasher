@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5714152164898564894}
   m_Layer: 0
   m_Name: rightthigh
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 7028126858733462812}
   m_Layer: 0
   m_Name: leftleg
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -471,7 +471,7 @@ GameObject:
   - component: {fileID: 6153384917237046752}
   m_Layer: 0
   m_Name: leftarm
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -612,7 +612,7 @@ GameObject:
   - component: {fileID: 1528778317377376312}
   m_Layer: 0
   m_Name: Root
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -851,7 +851,7 @@ GameObject:
   - component: {fileID: 6462587908311839974}
   m_Layer: 0
   m_Name: lefthand
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -992,7 +992,7 @@ GameObject:
   - component: {fileID: 5884541097302648733}
   m_Layer: 0
   m_Name: leftthigh
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1102,7 +1102,7 @@ GameObject:
   - component: {fileID: 5401814512110865910}
   m_Layer: 0
   m_Name: rightfoot
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1305,6 +1305,7 @@ GameObject:
   - component: {fileID: 6902294247222914672}
   - component: {fileID: 6089483113640096968}
   - component: {fileID: 6089483113640096971}
+  - component: {fileID: 7512776061967689593}
   m_Layer: 0
   m_Name: uploads_files_2621229_Demo_mesh
   m_TagString: Enemy
@@ -1320,7 +1321,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6089483113640096970}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 309.57025, y: 0, z: 349.59894}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1381,6 +1382,20 @@ MonoBehaviour:
   - {fileID: 9187873290938855758}
   - {fileID: 4016287861375199547}
   alive: 1
+--- !u!136 &7512776061967689593
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6089483113640096970}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &6738895044671486412
 GameObject:
   m_ObjectHideFlags: 0
@@ -1395,7 +1410,7 @@ GameObject:
   - component: {fileID: 2089355300248874721}
   m_Layer: 0
   m_Name: rightleg
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1536,7 +1551,7 @@ GameObject:
   - component: {fileID: 88056619527959740}
   m_Layer: 0
   m_Name: rightarm
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1646,7 +1661,7 @@ GameObject:
   - component: {fileID: 2307896276419056786}
   m_Layer: 0
   m_Name: neck
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1756,7 +1771,7 @@ GameObject:
   - component: {fileID: 3615317408366488656}
   m_Layer: 0
   m_Name: leftfoot
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2026,7 +2041,7 @@ GameObject:
   - component: {fileID: 2284871772991587784}
   m_Layer: 0
   m_Name: righthand
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2136,7 +2151,7 @@ GameObject:
   - component: {fileID: 2497220847245109207}
   m_Layer: 0
   m_Name: head
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
