@@ -7,6 +7,10 @@ public class behavor : MonoBehaviour
     public int mag = 30;
     public AudioSource gunShot;
 
+    bool isAiming;
+    public Animation ads;
+    public AnimationClip aim;
+    public AnimationClip unaim;
     bool isReloading;
     public Animation gun;
     public AnimationClip recoil;
@@ -41,7 +45,26 @@ public class behavor : MonoBehaviour
                 }
             }
         }
-        if(Input.GetKeyDown("r"))
+        if (Input.GetKeyDown("q"))
+        {
+            if (!isAiming)
+            {
+                ads.clip = aim;
+                ads.Play();
+                isAiming = true;
+            }
+        }
+        if (Input.GetKeyUp("q"))
+        {
+            if(isAiming)
+            {
+                ads.clip = unaim;
+                ads.Play();
+                isAiming = false;
+            }
+        }
+        
+        if (Input.GetKeyDown("r"))
         {
             isReloading = true;
             gun.clip = reload;
